@@ -9,7 +9,7 @@ license=('GPL')
 depends=('gtksourceview3' 'enchant' 'desktop-file-utils' 'libsm')
 makedepends=('git' 'gnome-common' 'iso-codes')
 provides=($_pkgname)
-conflicts=('xed')
+conflicts=('xed' $_pkgname)
 url='https://github.com/linuxmint/xed'
 install=xed.install
 
@@ -23,7 +23,9 @@ pkgver() {
 
 build() {
     cd ${srcdir}/${pkgname}
-    ./autogen.sh --with-gtk=3.0 --prefix="/usr"
+    ./autogen.sh --with-gtk=3.0 --prefix="/usr" \
+         --localstatedir="/var" \
+         --libexecdir="/usr/lib/xed"
     make
 }
 
