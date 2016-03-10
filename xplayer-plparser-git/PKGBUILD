@@ -24,7 +24,7 @@ build() {
     cd ${srcdir}/${pkgname}
     ./autogen.sh --prefix="/usr" \
          --localstatedir="/var" \
-         --libexecdir="/usr/lib/xplayer"
+         --libexecdir="/usr/lib/xplayer-plparser"
     make
 }
 
