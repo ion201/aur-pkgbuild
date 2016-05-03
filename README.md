@@ -15,13 +15,6 @@ From the Linux Mint blog page and Segfault blog:
 4. To provide the functionality users already enjoy (or enjoyed in the past for distributions which already lost some functionality).
 5. To be backward-compatible (hopefully all the way to GTK 3.10)."
 
-The X-Apps created for this purpose are the following ones:
-1. Xed
-2. Xreader
-3. Xplayer
-4. Xar
-5. Xviewer
-
 Contributors
 ---------
 ion201 - Nate Simon (Maintainer)
