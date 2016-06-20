@@ -3,4 +3,5 @@
 .SRCINFO
 *.pkg.tar.xz
 *.log
-
+pkg/
+src/
