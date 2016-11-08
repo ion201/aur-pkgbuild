@@ -30,7 +30,7 @@ build() {
     cd ${srcdir}/${pkgname}-${pkgver}
     gnome-autogen.sh --prefix="/usr" \
         --localstatedir="/var" \
-        --libexecdir="/usr/lib/pix" \
+        --libexecdir="/usr/lib/${pkgname}" \
         -disable-static
 
     # Copy some files that ended up in the wrong directory.
