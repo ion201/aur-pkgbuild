@@ -10,7 +10,7 @@ license=('GPL')
 depends=('gtksourceview3' 'enchant' 'desktop-file-utils' 'libsm'
         'libpeas')
 makedepends=('git' 'gnome-common' 'iso-codes' 'gobject-introspection')
-provides=($_pkgname)
+provides=($pkgname)
 conflicts=(${_pkgbasename})
 url='https://github.com/linuxmint/xed'
 install=xed.install

@@ -19,7 +19,7 @@ optdepends=('gstreamer: Video support'
     'brasero: Burn discs'
     'liboauth: Web albums'
     'libchamplain: Map Viewer')
-provides=($_pkgname)
+provides=($pkgname)
 conflicts=(${_pkgbasename})
 url='https://github.com/linuxmint/pix'
 install=pix.install

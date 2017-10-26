@@ -9,7 +9,7 @@ arch=('i686' 'x86_64')
 license=('GPL')
 depends=('xviewer-git' 'libpeas')
 makedepends=('gnome-common')
-provides=($_pkgname)
+provides=($pkgname)
 conflicts=("${_pkgbasename}")
 url='https://github.com/linuxmint/xviewer-plugins'
 
@@ -33,4 +33,3 @@ package(){
     cd ${srcdir}/${pkgname}
     make DESTDIR="$pkgdir/" install
 }
-

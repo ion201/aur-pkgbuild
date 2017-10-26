@@ -13,7 +13,7 @@ depends=('clutter-gtk' 'clutter-gst' 'xplayer-plparser'
     'xapps')
 makedepends=('gnome-common' 'gtk-doc' 'gobject-introspection' 'vala')
 optdepends=('gst-libav: Extra media codec support')
-provides=($_pkgname)
+provides=($pkgname)
 conflicts=('xplayer-git')
 url='https://github.com/linuxmint/xplayer'
 install=xplayer.install

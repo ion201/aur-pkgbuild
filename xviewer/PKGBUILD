@@ -9,7 +9,7 @@ license=('GPL')
 depends=('gtk3' 'glib2' 'gnome-desktop' 'libpeas')
 makedepends=('gnome-common' 'libglade' 'gobject-introspection')
 optdepends=('xviewer-plugins: Extra plugins')
-provides=($_pkgname)
+provides=($pkgname)
 conflicts=('xviewer-git')
 url='https://github.com/linuxmint/xviewer'
 install=xviewer.install
@@ -29,4 +29,3 @@ package(){
     cd ${srcdir}/${pkgname}-${pkgver}
     make DESTDIR="$pkgdir/" install
 }
-
