@@ -17,7 +17,6 @@ optdepends=('gst-libav: Extra media codec support')
 provides=($pkgname $_pkgbasename)
 conflicts=(${_pkgbasename})
 url='https://github.com/linuxmint/xplayer'
-install=xplayer.install
 
 source=("${pkgname}::git+https://github.com/linuxmint/${_pkgbasename}.git")
 md5sums=('SKIP')

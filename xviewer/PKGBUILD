@@ -12,7 +12,6 @@ optdepends=('xviewer-plugins: Extra plugins')
 provides=($pkgname)
 conflicts=('xviewer-git')
 url='https://github.com/linuxmint/xviewer'
-install=xviewer.install
 
 source=("${pkgname}-${pkgver}.tar.gz::https://github.com/linuxmint/${pkgname}/archive/${pkgver}.tar.gz")
 md5sums=('583cba9c604f3f48b4bf36c18bdc885b')
