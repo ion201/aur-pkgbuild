@@ -44,7 +44,7 @@ build() {
         cp 'tests/$(top_srcdir)/pix/.deps/oauth_test-gsignature.Po' "pix/.deps/"
     fi
 
-    make
+    #make
 }
 
 package(){
