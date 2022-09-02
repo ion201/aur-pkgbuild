@@ -14,12 +14,9 @@ provides=($pkgname $_pkgbasename)
 conflicts=(${_pkgbasename})
 url="https://github.com/linuxmint/${_pkgbasename}"
 
-source=("${pkgname}::git+https://github.com/linuxmint/${_pkgbasename}.git")
+source=("${pkgname}::git+${url}.git")
 md5sums=('SKIP')
 
-prepare() {
-    cd ${srcdir}/${pkgname}
-}
 
 pkgver() {
     cd ${srcdir}/${pkgname}
