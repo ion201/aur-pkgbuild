@@ -10,6 +10,9 @@ license=('GPL')
 depends=('gtksourceview4' 'enchant' 'desktop-file-utils' 'libsm'
         'libpeas' 'xapps' 'gspell')
 makedepends=('git' 'gobject-introspection' 'meson' 'intltool' 'itstool')
+optdepends=(
+    'yelp: View help and documentation from the app'
+)
 provides=($pkgname $_pkgbasename)
 conflicts=(${_pkgbasename})
 url="https://github.com/linuxmint/${_pkgbasename}"
