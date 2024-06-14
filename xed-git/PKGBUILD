@@ -2,14 +2,17 @@
 
 pkgname=xed-git
 _pkgbasename=xed
-pkgver=3.6.1.r0.g2f5293b
+pkgver=3.6.2.r1.gcc82519
 pkgrel=1
 pkgdesc="A small and lightweight text editor. X-Apps Project (git version)."
 arch=('i686' 'x86_64' 'armv7h')
 license=('GPL')
 depends=('gtksourceview4' 'enchant' 'desktop-file-utils' 'libsm'
         'libpeas' 'xapps' 'gspell')
-makedepends=('git' 'gobject-introspection' 'meson' 'intltool' 'itstool')
+makedepends=(
+    'git' 'gobject-introspection' 'meson' 'intltool' 'itstool'
+    'glib2-devel'
+)
 optdepends=(
     'yelp: View help and documentation from the app'
 )
