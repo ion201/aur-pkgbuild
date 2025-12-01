@@ -2,11 +2,11 @@
 
 pkgname=xviewer-git
 _pkgbasename=xviewer
-pkgver=3.4.4.r0.gc201d9e
+pkgver=3.4.7.r8.g06b883d
 pkgrel=1
 pkgdesc="A simple and easy to use image viewer. X-Apps Project (git version)."
 arch=('i686' 'x86_64' 'armv7h')
-license=('GPL')
+license=('GPL-2.0-or-later')
 depends=('xapp' 'gtk3' 'cinnamon-desktop' 'libpeas' 'libexif' 'libjpeg-turbo'
          'exempi')
 makedepends=(
@@ -23,9 +23,9 @@ optdepends=('xviewer-plugins-git: Extra plugins'
 )
 provides=(${_pkgbasename})
 conflicts=(${_pkgbasename})
-url='https://github.com/linuxmint/xviewer'
+url='https://github.com/ygerlach/xviewer'
 
-source=("${pkgname}::git+${url}.git")
+source=("${pkgname}::git+${url}.git#branch=fixDeadlock")
 md5sums=('SKIP')
 
 
